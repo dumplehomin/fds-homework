@@ -1,0 +1,93 @@
+.reset-list ul, .reset-list ol {
+	list-style-type : none;
+	margin : 0;
+	border : 1px solid #ddd;
+	padding : 10px 10px 0;
+}
+
+a[href$=".aac"] {
+	background-image : url("svg/aac.svg");
+}
+
+a[href$=".ai"] {
+	background-image : url("svg/ai.svg");
+}
+
+a[href$=".avi"] {
+	background-image : url("svg/avi.svg");
+}
+
+a[href$=".doc"] {
+	background-image : url("svg/doc.svg");
+}
+
+a[href$=".flac"] {
+	background-image : url("svg/flac.svg");
+}
+
+a[href$=".gif"] {
+	background-image : url("svg/gif.svg");
+}
+
+a[href$=".html"] {
+	background-image : url("svg/html.svg");
+}
+
+a[href$=".jpg"] {
+	background-image : url("svg/jpg.svg");
+}
+
+a[href$=".js"] {
+	background-image : url("svg/js.svg");
+}
+
+a[href$=".mov"] {
+	background-image : url("svg/mov.svg");
+}
+
+a[href$=".mp3"] {
+	background-image : url("svg/mp3.svg");
+}
+
+a[href$=".mp4"] {
+	background-image : url("svg/mp4.svg");
+}
+
+a[href$=".pdf"] {
+	background-image : url("svg/pdf.svg");
+}
+
+a[href$=".png"] {
+	background-image : url("svg/png.svg");
+}
+
+a[href$=".psd"] {
+	background-image : url("svg/psd.svg");
+}
+
+a[href$=".tiff"] {
+	background-image : url("svg/tiff.svg");
+}
+
+a[href$=".txt"] {
+	background-image : url("svg/txt.svg");
+}
+
+a[href$=".xls"] {
+	background-image : url("svg/xls.svg");
+}
+
+.lecture-file-list li {
+	display : inline-block;
+	width : 150px;
+	margin-bottom : 15px;
+}
+
+.lecture-file-list a {
+	display : block;
+	font-size : 1.88em;
+	background-repeat : no-repeat;
+	background-size : 0.9em;
+	text-decoration : none;
+	text-indent : 35px;
+}
