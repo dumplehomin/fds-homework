@@ -28,7 +28,7 @@ E[foo*="bar"] | ‘foo’ 속성의 값에 ’bar’를 포함하는 요소 선�
 E:root | 문서의 최상위 루트 요소 선택 | O | O | O | O | O | X | X | X
 E:nth-child(n) | 그 부모의 n번째 자식이 앞으로부터 지정된 순서와 일치하는 E 라면 선택 | O | O | O | O | O | X| X | X
 E:nth-last-child(n) | n번째 자식이 뒤로부터 지정된 순서와 일치하는 요소가 E 라면 선택 | O | O | O | O | O | X | X | X
-E:nth-of-type(n) E 요소 중 앞으로부터 순서가 일치하는 n번째 E 요소 선택 | O | O | O | O | O | X | X | X
+E:nth-of-type(n) | E 요소 중 앞으로부터 순서가 일치하는 n번째 E 요소 선택 | O | O | O | O | O | X | X | X
 E:nth-last-of-type(n) | E 요소 중 끝으로부터 순서가 일치하는 n번째 E 요소 선택 | O | O | O | O | O | X | X | X
 E:last-child | E 요소 중 마지막 자식이라면 E 선택 | O | O | O | O | O | X | X | X
 E:first-of-type | E 요소 중 첫번째 E 선택 | O | O | O | O | O | X | X | X
