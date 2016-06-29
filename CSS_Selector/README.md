@@ -1,5 +1,17 @@
 #css 선택자
-유형 | 설명 |Safari 5|Chrome 8|FireFox 3.6|Opera 11| I9b | IE8 | IE7 | IE6
+
+##속성 선택자
+유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | I9b | IE8 | IE7 | IE6
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+E[foo] | ‘foo’ 속성이 포함된 E를 선택 | O | O | O | O | O | O | O | X
+E[foo="bar"] | ‘foo’ 속성의 값이 ’bar’와 일치하는 E를 선택 | O | O | O | O | O | O | O | X
+E[foo~="bar"] | ‘foo’ 속성의 값에 ’bar’가 포함되는 E를 선택 | O | O | O | O | O | O | O | X
+E[foo|="en"] | ‘foo’ 속성의 값이 ’en’ 또는 ’en-’ 으로 시작되는  E를 선택 | O | O | O | O | O | O | O | X
+E[foo^="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 시작하는 요소 선택 | O | O | O | O | O | O | O | X
+E[foo$="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 끝나는 요소 선택 | O | O | O | O | O | O | O | X
+E[foo*="bar"] | ‘foo’ 속성의 값에 ’bar’를 포함하는 요소 선택 | O | O | O | O | O | O | O | X
+
+유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | I9b | IE8 | IE7 | IE6
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 #id | id로 지정된 요소 선택 | O | O | O | O | O | O | O | O
 .class | class로 지정된 요소 선택 | O | O | O | O | O | O | O | O
@@ -12,19 +24,14 @@ E:focus | focus가 머물러 있는 동안 E를 선택 | O | O | O | O | O | O |
 E:first-line | E 요소의 첫 번째 라인 선택 | O | O | O | O | O | O | O | X
 E:first-letter | E 요소의 첫 번째 문자 선택 | O | O | O | O | O | O | X
 * | 모든 요소 선택 | O | O | O | O | O | O | O | O
-E[foo] | ‘foo’ 속성이 포함된 E를 선택 | O | O | O | O | O | O | O | X
-E[foo="bar"] | ‘foo’ 속성의 값이 ’bar’와 일치하는 E를 선택 | O | O | O | O | O | O | O | X
-E[foo~="bar"] | ‘foo’ 속성의 값에 ’bar’가 포함되는 E를 선택 | O | O | O | O | O | O | O | X
-E[foo|="en"] | ‘foo’ 속성의 값이 ’en’ 또는 ’en-’ 으로 시작되는  E를 선택 | O | O | O | O | O | O | O | X
+
 E:first-child | 첫 번째 자식 요소가 E라면 선택 | O | O | O | O | O | O | O | X
 E:lang(fr) | HTML lang 속성의 값이 ’fr’로 지정된 E를 선택 | O | O | O | O | O | O | X | X
 E::before | E 요소 전에 생성된 요소 선택 | O | O | O | O | O | O | X | X
 E::after | E 요소 후에 생성된 요소 선택 | O | O | O | O | O | O | X | X
 E>F | E 요소의 자식인 F 요소 선택 | O | O | O | O | O | O | O | X
 E+F | E 요소를 뒤의 F 요소 선택 | O | O | O | O | O | O | O | X
-E[foo^="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 시작하는 요소 선택 | O | O | O | O | O | O | O | X
-E[foo$="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 끝나는 요소 선택 | O | O | O | O | O | O | O | X
-E[foo*="bar"] | ‘foo’ 속성의 값에 ’bar’를 포함하는 요소 선택 | O | O | O | O | O | O | O | X
+
 E:root | 문서의 최상위 루트 요소 선택 | O | O | O | O | O | X | X | X
 E:nth-child(n) | 그 부모의 n번째 자식이 앞으로부터 지정된 순서와 일치하는 E 라면 선택 | O | O | O | O | O | X| X | X
 E:nth-last-child(n) | n번째 자식이 뒤로부터 지정된 순서와 일치하는 요소가 E 라면 선택 | O | O | O | O | O | X | X | X
