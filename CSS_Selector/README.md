@@ -3,6 +3,7 @@
 - 속성 선택자
 - 가상 클래스
 - 가상 요소
+---
 
 ##속성 선택자
 유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | I9b | IE8 | IE7 | IE6
