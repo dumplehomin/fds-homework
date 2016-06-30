@@ -7,7 +7,7 @@
 ---
 ###일반 선택자
 
-유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
+선택자 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 * | 모든 요소 선택 | O | O | O | O | O | O | O | O
 #id | id로 지정된 요소 선택 | O | O | O | O | O | O | O | O
@@ -19,7 +19,7 @@ E~F | E 요소가 앞에 존재하면 F를 선택 | O | O | O | O | O | O | O | 
 ---
 ###속성 선택자
 
-유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
+선택자 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 E[foo] | ‘foo’ 속성이 포함된 E를 선택 | O | O | O | O | O | O | O | X
 E[foo="bar"] | ‘foo’ 속성의 값이 ’bar’와 일치하는 E를 선택 | O | O | O | O | O | O | O | X
@@ -32,7 +32,7 @@ E[foo*="bar"] | ‘foo’ 속성의 값에 ’bar’를 포함하는 요소 선�
 
 ###가상 클래스
 
-유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
+선택자 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 E:link | 방문하지 않은 E를 선택 | O | O | O | O | O | O | O | O
 E:visited | 방문한 E를 선택 | O | O | O | O | O | O | O | O
@@ -56,7 +56,7 @@ E:not(s) | s가 아닌 E 요소 선택 | O | O | O | O | O | X | X | X
 
 ###가상 요소
 
-유형 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
+선택자 | 설명 | Safari 5| Chrome 8 | FireFox 3.6 | Opera 11 | IE9 | IE8 | IE7 | IE6
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 E::lang(fr) | HTML lang 속성의 값이 ’fr’로 지정된 E를 선택 | O | O | O | O | O | O | X | X
 E::before | E 요소 전에 생성된 요소 선택 | O | O | O | O | O | O | X | X
