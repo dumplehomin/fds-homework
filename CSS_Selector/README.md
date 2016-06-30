@@ -24,7 +24,7 @@ E~F | E 요소가 앞에 존재하면 F를 선택 | O | O | O | O | O | O | O | 
 E[foo] | ‘foo’ 속성이 포함된 E를 선택 | O | O | O | O | O | O | O | X
 E[foo="bar"] | ‘foo’ 속성의 값이 ’bar’와 일치하는 E를 선택 | O | O | O | O | O | O | O | X
 E[foo~="bar"] | ‘foo’ 속성의 값에 ’bar’가 포함되는 E를 선택 | O | O | O | O | O | O | O | X
-E[foo|="en"] | ‘foo’ 속성의 값이 ’en’ 또는 ’en-’ 으로 시작되는  E를 선택 | O | O | O | O | O | O | O | X
+E[foo\|="en"] | ‘foo’ 속성의 값이 ’en’ 또는 ’en-’ 으로 시작되는  E를 선택 | O | O | O | O | O | O | O | X
 E[foo^="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 시작하는 요소 선택 | O | O | O | O | O | O | O | X
 E[foo$="bar"] | ‘foo’ 속성의 값이 ’bar’로 정확하게 끝나는 요소 선택 | O | O | O | O | O | O | O | X
 E[foo*="bar"] | ‘foo’ 속성의 값에 ’bar’를 포함하는 요소 선택 | O | O | O | O | O | O | O | X
