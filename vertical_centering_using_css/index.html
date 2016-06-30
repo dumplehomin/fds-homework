@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vertical_centering_using_css</title>
+<style>
+.text, .image, .block {
+	width:14em;
+	height:8em;
+	margin:0.5em;
+	border:thick solid;
+	background:#fff;
+}
+
+.text {
+	border-color:#99f;
+}
+
+.image {
+	border-color:#f99;
+}
+
+.image img {
+	width:50px;
+	height:50px;
+}
+
+.block {
+	color:#ff0000;
+}
+.block div {
+	border:dashed;
+	width:10em;
+}
+
+.text1, .image1, .block1 {
+	line-height:8em;
+}
+
+.text2, .image2, .block2 { 
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.block3 {
+	line-height:8em;
+}
+.block3 div {
+	display:inline-block;
+    vertical-align:middle;
+    line-height: 1.2em;
+}
+
+</style>
+</head>
+<body>
+<!-- ===================================================== -->
+<h3>Using line-height (and vertical-align)</h3>
+
+<h4>Non-replaced inline content</h4>
+<p>div의 height 와 line-height 값을 동일하게 준다</p>
+<div class="text1 text">
+	<span>Some Text</span>
+</div>
+
+<h4>Replaced content</h4>
+<p>div의 height 와 line-height 값을 동일하게 주고</p>
+<p>그 자식요소로 이미지일 경우 이미지요소에 vertical-align:middle을 준다</p>
+<div class="image1 image">
+	<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFoAtAMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQb/xAAWEAEBAQAAAAAAAAAAAAAAAAAAAUH/xAAVAQEBAAAAAAAAAAAAAAAAAAAABv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMSAo00AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAChQAAAABQBAACAAAAAAUAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAABgAEAAAAAAAf/9k=" alt="blue square" style="vertical-align:middle;">
+</div>
+
+<h4>Block content</h4>
+<p>div의 height 와 line-height 값을 동일하게 준다</p>
+<p>내용이 두줄 이상 나오면 안된다</p>
+<div class="block1 block" style="margin-bottom:150px">
+	<div> Block element, with long enough content</div>
+</div>
+<hr>
+<!-- ===================================================== -->
+<h4>Using display:table-cell</h4>
+
+<p>자식을 감싸는 부모요소에 display:table-cell을 주고 vertical-align:middle 속성을 사용하여 자식요소를 가운데 배치시킨다</p>
+
+<h4>Non-replaced inline content</h4>
+<div class="text2 text">
+	<span>Some Text</span>
+</div>
+
+<h4>Replaced content</h4>
+<div class="image2 image">
+	<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFoAtAMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQb/xAAWEAEBAQAAAAAAAAAAAAAAAAAAAUH/xAAVAQEBAAAAAAAAAAAAAAAAAAAABv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMSAo00AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAChQAAAABQBAACAAAAAAUAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAABgAEAAAAAAAf/9k=" alt="blue square">
+</div>
+
+<h4>Block content</h4>
+<div class="block2 block">
+	<div> Block element, with long enough content</div>
+</div>
+<hr>
+<!-- ===================================================== -->
+<h3>Using line-height and display:inline-block</h3>
+
+<p>div의 height 와 line-height 값을 동일하게 준다</p>
+<p>자식요소를 display:inline-block 값을 주고 vertical-align:middle 로 가운데 정렬 시킨다. 자식요소의 컨텐츠가 두줄 이상이면 line-height 값을 조절한다</p>
+
+<h4>Block content</h4>
+<div class="block3 block">
+	<div>Block element, with long enough content</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
