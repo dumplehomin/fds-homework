@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr-KO">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="resource/common.css">
+	<link rel="stylesheet" href="resource/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<ul class="gallery-container">
+	
+</ul>
+
+<script>
+var $galleryContainer = document.querySelector(".gallery-container");
+var imgSRCArray = [
+	"https://cdn.mirror.wiki/http://images8.alphacoders.com/425/425094.jpg",
+	"http://i.huffpost.com/gen/2311614/images/o-POOH-facebook.jpg",
+	"http://naradeco.co.kr/wp-content/uploads/2015/01/%ED%91%B8.png",
+	"http://image.hankookilbo.com/i.aspx?Guid=2ade4fcd967d48a4b7618e3991787c43&Month=20141121&size=640",
+	"https://live3-attachment.namuwikiusercontent.com/%ED%91%B8__pooh.jpg",
+	"http://pds2.egloos.com/pds/1/200609/27/06/d0032606_2041392.jpg",
+	"http://cfile26.uf.tistory.com/image/26712A49538C8EC0307F05",
+	"http://t1.daumcdn.net/movie/movie-article/19/28/MR_2819/MR_2819[120][0].jpg",
+	"http://images2.fanpop.com/images/photos/6500000/Winnie-the-Pooh-winnie-the-pooh-6510092-400-284.jpg",
+	"http://pds25.egloos.com/pds/201502/25/08/a0015808_54eda0538ee77.jpg"
+]
+var $imgs = document.querySelectorAll("img");
+
+for( var src of imgSRCArray ){
+	var $li = document.createElement("li");
+	var $img = document.createElement("img");
+	var $div = document.createElement("div");
+	var originalWidth;
+	var originalHeight;
+
+	$img.src = src;
+
+	originalWidth = $img.naturalWidth;
+	originalHeight = $img.naturalHeight;
+
+	if( originalWidth > originalHeight ){
+		$img.classList.add("portrait");
+	}else {
+		$img.classList.add("landscape");
+	}
+
+	$div.classList.add("centered");
+
+	$div.appendChild( $img );
+	$li.appendChild( $div );
+	$galleryContainer.appendChild( $li );
+}
+</script>
+</body>
+</html>
