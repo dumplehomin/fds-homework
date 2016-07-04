@@ -1,0 +1,131 @@
+html, body {
+	width: 100vw;
+}
+
+section {
+	width: 100vw;
+	/*background-image: url("../images/bg.png");*/
+}
+
+article {
+	width: 50vw;
+	height: 25.5555vw;
+	float: left;
+}
+
+article div {
+	width: 50%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.item1 {
+	width: 100vw;
+}
+
+.item4 .img,
+.item5 .img {
+	float: right
+}
+
+.text {
+	height: 100%;
+	padding: 0 1.7777vw;
+	padding-top: 6.1111vw;
+	text-align: center;
+}
+
+.item1 .text {
+	padding-left: 0.6666vw;
+	padding-right: 0.6666vw;
+}
+
+h2 {
+	font-family: "Montserrat";
+	font-size: 0.73rem;
+	line-height: 1.1;
+	color: #464646;
+	margin-bottom: 1.3333vw;
+}
+
+p {
+	font-family: "Open Sans";
+	font-size: 0.6rem;
+	line-height: 1.5;
+	color: #464646;
+}
+
+p::after {
+	content: "";
+	text-align: center;
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	margin-top: 1.3333vw;
+
+	border-bottom: 1px solid #000;
+}
+
+.item1 .text p::after {
+	width: 10%;
+}
+
+a {
+	display: inline-block;
+	width: 2vw;
+	height: 2vw;
+	text-indent: -9990em;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 1.1111vw;
+	background-image: url("../images/icon-twitter.png");
+	background-size: cover;
+}
+
+article .text::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: -1.25rem; top: 0; bottom: 0;
+	margin: auto;
+	border: 1.25rem solid transparent;
+	border-left-width: 0;
+   border-top-color: transparent;
+   border-bottom-color: transparent;
+}
+
+article.item4 .text::after,
+article.item5 .text::after {
+	left: auto;
+	right: -1.25rem;
+	border: 1.25rem solid transparent;
+	border-right-width: 0;
+	border-top-color: transparent;
+   border-bottom-color: transparent;
+}
+
+article:hover .text::after {
+	border-right-color: #fff1e2;
+}
+
+article.item4:hover .text::after,
+article.item5:hover .text::after {
+	border-left-color: #fff1e2;
+}
+
+a:hover {
+	background-image: url("../images/icon-twitter_hover.png");
+}
+
+article:hover {
+	background-color: #fff1e2;
+}
