@@ -1,0 +1,67 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(ellipse at center, 
+		rgba(254,255,255,1) 0%,
+		rgba(210,235,249,1) 100%);
+}
+
+.container {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+}
+
+
+.buttonset-movie-control {
+	display: inline-block;
+}
+
+.buttonset-movie-control button {
+	position: relative;
+	padding: 5px 25px;
+	float: left;
+
+	font-size: 12px;
+	color: #fff;
+
+	box-sizing: border-box;
+	border: 1px solid black;
+	background-image: linear-gradient(to bottom, 
+		rgba(167,207,223,1) 0%,
+		rgba(35,83,138,1) 100%);
+}
+
+.buttonset-movie-control button:focus {
+	outline: none;
+}
+
+.buttonset-movie-control button:active {
+	color: #000;
+}
+
+.buttonset-movie-control>button:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-right: 0 none;
+}
+
+.buttonset-movie-control>button:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;	
+	border-left: 0 none;
+}
+
+.buttonset-movie-control>button span {
+	position: absolute;
+	left: 10px; top: 3px;
+	margin: auto;
+	font-size: 0.63rem;
+}
+
+
