@@ -1,0 +1,335 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font: 1rem/1.5 "Spoqa Han Sans", sans-serif;
+	color: #2c2c2c;
+
+	line-height: 1.5rem;
+
+	margin: 1.5rem;
+
+	/*background-image: linear-gradient( 180deg, 
+		transparent 97%, #ccc 97%);
+	background-size: 1px 24px;*/
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 600;
+  font-style: inherit;
+  font-size: 1.9375rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5625rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+section {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.list-style>ul,
+.list-style>ol,
+.list-style>dl {
+	float: left;
+}
+
+.list-style>ul,
+.list-style>ol {
+	margin-right: 4.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.list-style ul {
+	list-style-type: disc;
+}
+
+.list-style ol {
+	list-style-type: decimal;
+}
+
+.list-style ul,
+.list-style ol,
+.list-style dl, {
+	margin-bottom: 1.5rem;
+}
+
+.list-style ul>li, 
+.list-style ol>li,
+.list-style dl>dd {
+	margin-left: 1.5rem;
+}
+
+.list-style ul>li>ul>li {
+	list-style-type: circle;
+}
+.list-style ol>li>ol>li {
+	list-style-type: decimal-leading-zero;
+}
+
+.title {
+	color: #969595;
+}
+
+.table-style h3 {
+	margin-bottom: 1.5rem;
+}
+
+.table-style table {
+	width: 100%;
+	margin: -1px 0;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.table-style table td,
+.table-style table th,
+.table-style table tr {
+	padding: 0;
+	line-height: 2.9375rem;
+}
+
+.table-style table th {
+	background-color: #f8f8f8;
+}
+
+.table-style .table1 {
+	border-top: 1px solid #e2e1e1;
+	border-bottom: 1px solid #e2e1e1;
+}
+
+.table-style .table1 td,
+.table-style .table1 th,
+.table-style .table1 tr {
+	border-top: 1px solid #e2e1e1;
+	border-bottom: 1px solid #e2e1e1;
+}
+
+.table-style .table2 {
+	border: 1px solid #e2e1e1;
+}
+
+.table-style .table2 td,
+.table-style .table2 th,
+.table-style .table2 tr {
+	border: 1px solid #e2e1e1;
+}
+
+.table-style .table3 {
+	border: 0 none;
+}
+
+.table-style .table3 th,
+.table-style .table3 tr:nth-child(2n+1):last-child,
+.table-style .table3 tr:nth-last-child(2) td[rowspan] {
+	background-color: none;
+	border-bottom: 1px solid #505050;
+}
+
+.table-style .table3 td {
+	border-bottom: 1px dashed #e2e1e1;
+}
+
+.table-style .table3 tr:nth-child(2n+1),
+.table-style .table3 td[rowspan]{
+	border-bottom: 1px solid #e2e1e1;
+}
+
+.table-style .table3 td[rowspan] {
+	vertical-align: middle;
+}
+
+.color-style ul>li.box {
+	width: 7.5rem;
+	height: 7.5rem;
+	text-align: center;
+	float: left;
+	font-family: HelveticaLight;
+	font-size: 1rem;
+	letter-spacing: 1.2px;
+	line-height: 1.5rem;
+	position: relative;
+	text-transform: uppercase;
+	margin-right: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.color-style ul>li.box::before {
+	display: block;
+	height: 100%;
+	line-height: 7.5rem;
+	color: #fff;
+}
+
+.color-style ul>li.box::after {
+	display: block;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+	bottom: -1.5rem;
+}
+
+.color-style ul>li.box1 {
+	background-color: #fcb409;
+}
+
+.color-style ul>li.box1::before {
+	content: "#fcb409";
+}
+
+.color-style ul>li.box1::after {
+	content: "WARRING";
+}
+
+.color-style ul>li.box2 {
+	background-color: #63a2fc;
+}
+
+.color-style ul>li.box2::before {
+	content: "#63a2fc";
+}
+
+.color-style ul>li.box2::after {
+	content: "INFO";
+}
+
+.color-style ul>li.box3 {
+	background-color: #44cb83;
+}
+
+.color-style ul>li.box3::before {
+	content: "#44cb83";
+}
+
+.color-style ul>li.box3::after {
+	content: "SUCESS";
+}
+
+.color-style ul>li.box4 {
+	background-color: #7171ef;
+}
+
+.color-style ul>li.box4::before {
+	content: "#7171ef";
+}
+
+.color-style ul>li.box4::after {
+	content: "PRIMARY";
+}
+
+.color-style ul>li.box5 {
+	background-color: #ff5448;
+}
+
+.color-style ul>li.box5::before {
+	content: "#ff5448";
+}
+
+.color-style ul>li.box5::after {
+	content: "DANGER";
+}
+
+.color-style ul>li.box6 {
+	background-color: #787f94;
+}
+
+.color-style ul>li.box6::before {
+	content: "#787f94";
+}
+
+.color-style ul>li.box6::after {
+	content: "DEFAULT";
+}
+
+.color-style ul>li.box7 {
+	background-color: #333741;
+}
+
+.color-style ul>li.box7::before {
+	content: "#333741";
+}
+
+.color-style ul>li.box7::after {
+	content: "";
+}
+
+.color-style ul>li.box8 {
+	background-color: #333741;
+}
+
+.color-style ul>li.box8::before {
+	content: "#333741";
+}
+
+.color-style ul>li.box8::after {
+	content: "";
+}
+
+.color-style ul>li.box9 {
+	background-color: #586077;
+}
+
+.color-style ul>li.box9::before {
+	content: "#586077";
+}
+
+.color-style ul>li.box9::after {
+	content: "";
+}
+
+.color-style ul>li.box10 {
+	background-color: #bac2d0;
+}
+
+.color-style ul>li.box10::before {
+	content: "#bac2d0";
+}
+
+.color-style ul>li.box10::after {
+	content: "";
+}
+
+.color-style ul>li.box11 {
+	background-color: #d9e0e9;
+}
+
+.color-style ul>li.box11::before {
+	content: "#d9e0e9";
+}
+
+.color-style ul>li.box11::after {
+	content: "";
+}
