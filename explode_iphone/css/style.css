@@ -1,0 +1,190 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body *, body *::after, body *::before {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+	/*background-image: url("../images/bg2.png");*/
+}
+
+img {
+	width: 100%; height: auto;
+}
+
+ul, li {
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+}
+
+.container {
+	width: 42.7083vw; height: 25.3645vw;
+	transform: rotate( 0deg) translate(0,10vw);
+	right: 0vw; bottom: 0vw;
+
+	animation-name: container;
+}
+
+@keyframes container {
+	0%{ transform: rotate(0deg) translate(0,10vw);}
+
+	100%{ transform: rotate(-20deg) translate(6vw,2vw);}
+}
+
+.back {
+	width: 100%; height: 100%;
+}
+
+.usim {
+	width: 6.8229vw; height: 4.427vw;
+	bottom: -4.1666vw; right: -15.1041vw;
+
+	animation-name: usim;
+}
+
+@keyframes usim {
+	0%{ bottom: -4.1666vw; right: -15.1041vw;}
+
+	100%{ bottom: -14vw; right: -28vw;}
+}
+
+.driver {
+	width: 3.802vw; height: 2.3958vw;
+	bottom: -17.4479vw; right: 30.2083vw;
+
+	animation-name: driver;
+}
+
+@keyframes driver {
+	0%{ bottom: -17.4479vw; right: 30.2083vw;}
+
+	100%{ bottom: -25vw; right: 40vw;}
+}
+
+.memory {
+	width: 38.4895vw; height: 17.1875vw;
+	bottom: 7.2916vw; right: 2.0833vw;
+
+	animation-name: memory;
+}
+
+@keyframes memory {
+	0%{ bottom: 7.2916vw; right: 2.0833vw;}
+
+	100%{ bottom: 10vw; right: -3vw;}
+}
+
+.battery {
+	width: 37.8125vw; height: 19.1145vw;
+	bottom: 4.1666vw; right: -1.302vw;
+
+	animation-name: battery;
+}
+
+@keyframes battery {
+	0%{ bottom: 4.1666vw; right: -1.302vw;}
+
+	100%{ bottom: 10vw; right: -3vw;}
+}
+
+.button1 {
+	width: 2.8125vw; height: 1.7187vw;
+	bottom: -13.802vw; right: 26.8229vw;
+
+	animation-name: button1;
+}
+
+@keyframes button1 {
+	0%{ bottom: -13.802vw; right: 26.8229vw;}
+
+	100%{ bottom: -9vw; right: 35vw; }
+}
+
+.button2 {
+	width: 3.2812vw; height: 2.1875vw;
+	bottom: -13.802vw; right: 26.8229vw;	
+
+	animation-name: button2;
+}
+
+@keyframes button2 {
+	0%{ bottom: -13.802vw; right: 26.8229vw;}
+
+	100%{ bottom: -6vw; right: 37vw; }
+}
+
+.button3 {
+	width: 2.9166vw; height: 1.7187vw;
+	bottom: -13.802vw; right: 26.8229vw;	
+
+	animation-name: button3;
+}
+
+@keyframes button3 {
+	0%{ bottom: -13.802vw; right: 26.8229vw;}
+
+	100%{ bottom: -3vw; right: 39vw; }
+}
+
+.front {
+	width: 41.8229vw; height: 23.9583vw;
+	bottom: 1.302vw;
+
+	animation-name: front;
+}
+
+@keyframes front {
+	0%{ bottom: 1.302vw; }
+
+	100%{ bottom: 16vw; }
+}
+
+.border {
+	width: 36.5104vw; height: 21.0416vw;
+	bottom: 1.8229vw; right: -0.5208vw;
+
+	animation-name: border;
+}
+
+@keyframes border {
+	0%{ bottom: 1.8229vw; right: -0.5208vw; }
+
+	100%{ bottom: 16vw; right: 7vw; }
+}
+
+.display {
+	width: 36.4062vw; height: 20.8854vw;
+	bottom: 1.8229vw; right: 0.7812vw;
+
+	animation-name: display;
+}
+
+@keyframes display {
+	0%{ bottom: 1.8229vw; right: 0.7812vw; }
+
+	100%{ bottom: 18vw; right: 7vw; }
+}
+
+.glass {
+	width: 41.927vw; height: 24.1145vw;
+	bottom: 1.302vw;
+
+	animation-name: glass;
+}
+
+@keyframes glass {
+	0%{ bottom: 1.302vw; }
+
+	100%{ bottom: 26vw; right: 1vw; }
+}
