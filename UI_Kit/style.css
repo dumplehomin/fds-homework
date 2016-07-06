@@ -9,10 +9,12 @@ body {
 	line-height: 1.5rem;
 
 	margin: 1.5rem;
+}
 
-	/*background-image: linear-gradient( 180deg, 
-		transparent 97%, #ccc 97%);
-	background-size: 1px 24px;*/
+body:hover {
+    background-image: linear-gradient( 180deg, 
+		transparent 97%, #63a2fc 97%);
+	background-size: 1px 24px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
