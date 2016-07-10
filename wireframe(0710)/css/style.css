@@ -1,0 +1,204 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+
+	font-size: 1rem;
+	line-height: 1.5;
+	font-family: "Spoqa Han Sans", sans-serif;
+	color: #2c2c2c;
+
+	background-position: center top;
+	background-color: #cdcdcd;
+}
+
+.page-header {
+	background-color: #9da0a4;
+}
+
+.header-wrap {
+	width: 1260px;
+	height: 4.5rem;
+	padding-top: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-wrap h1 {
+	line-height: 1.7rem;
+	font-size: 2.125rem;
+	padding-left: 2.5rem;
+}
+
+.header-wrap nav {
+	float: right
+}
+
+.header-wrap nav ul li {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.page-main {
+	width: 1260px;
+	height: 22.5rem;
+	padding-top: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cdcdcd;
+}
+
+.page-main h2 {
+	font-size: 2.625rem;
+	line-height: 3rem;
+}
+
+.page-main p {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+.page-main .rolling-images {
+	margin-top: 1.5rem;
+	height: 12rem;
+}
+
+.page-main .rolling-images * {
+	height: 100%;
+}
+
+.page-main .rolling-images li {
+	background-color: #4e4e4e;
+}
+
+.page-main .rolling-images .rolling-btn {
+	position: relative;
+}
+
+.page-main .rolling-images .rolling-btn::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 3.125rem solid #8a8a8a;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.page-main .rolling-images .rolling-btn.left::after {
+	right: 0;
+	border-left-color: transparent;
+}
+
+.page-main .rolling-images .rolling-btn.right::after {
+	left: 0;
+	border-right-color: transparent;
+}
+
+.page-banner {
+	padding-top: 1.5rem;
+	background-color: #fff;
+}
+
+.page-banner ul {
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translateX(-50%);
+}
+
+.page-banner ul li {
+	height: 7.5rem;
+	margin-bottom: 1.5rem;
+	background-color: #cdcdcd;
+}
+
+.page-banner ul li:nth-child(2 ){
+	margin-right: 0;
+}
+
+footer {
+	padding: 1.5rem 0;
+	background-color: #c1c0c0;
+}
+
+footer h3 {
+	font-size: 1.88rem;
+	line-height: 3rem;
+}
+
+footer p {
+	font-size: 1.13rem;
+	line-height: 1.5rem;
+}
+
+footer form {
+	margin-top: 1.5rem;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translateX(-50%);
+}
+
+footer input,
+footer .button {
+	line-height: 3rem;
+}
+
+footer input {
+	padding-left: 1.75rem;
+	border: 1px solid #381e1e;
+}
+
+footer .button {
+	float: right;
+	padding: 0 0.9rem;
+	color: #fff;
+	background-color: #d25870;
+}
+
+/*--------------------------------------------------*/
+.header-wrap nav ul li,
+.page-main h2,
+.page-main p,
+footer {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
