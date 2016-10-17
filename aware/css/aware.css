@@ -165,6 +165,15 @@ body {
 	border-top: 2px solid #000;
 }
 /*------------------------------------------*/
+.main-rolling {
+	opacity : 0;
+	transition: all 1s;
+}
+
+.main-rolling.fade-in {
+	opacity: 1;
+}
+
 .main-rolling .btn-area[class*="col-"] {
 	float: right;
 }
@@ -281,6 +290,15 @@ body {
 	background-color: #365dae;
 }
 /*------------------------------------------*/
+.main-banner-set {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.main-banner-set.fade-in {
+	opacity: 1;
+}
+
 .main-banner-set a {
 	height: 24rem;
 	text-align: center;
